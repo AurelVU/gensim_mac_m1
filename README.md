@@ -1,6 +1,7 @@
-gensim – Topic Modelling in Python
+gensim mac m1 – Topic Modelling in Python
 ==================================
 
+# this project is a fork for Macbook M1. I built it in my Macbook M1 Pro 2021. While the project is raw, but you can have the assembled file for installation. I will continue to work if there is a mood and inspiration. To contact me, you can write to me in telegram: @aurelvu
 <!--
 The following image URLs are obfuscated = proxied and cached through
 Google because of Github's proxying issues. See:

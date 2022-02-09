@@ -52,6 +52,9 @@ def make_c_ext(use_cython=False):
         if use_cython:
             source = source.replace('.c', '.pyx')
         extra_args = []
+        # extra_args.append('-I/Users/vladimirusakov/miniforge3/envs/mlp/include/python3.8 -I/Users/vladimirusakov/miniforge3/envs/mlp/include/python3.8')
+        # extra_args.append('-I/Users/vladimirusakov/miniforge3/envs/mlp/lib/python3.8/site-packages/numpy/core/include')
+        # extra_args.append('-c')
 #        extra_args.extend(['-g', '-O0'])  # uncomment if optimization limiting crash info
         yield Extension(
             module,
@@ -64,6 +67,10 @@ def make_c_ext(use_cython=False):
 def make_cpp_ext(use_cython=False):
     extra_args = []
     system = platform.system()
+
+    # extra_args.append('-I/Users/vladimirusakov/miniforge3/envs/mlp/include/python3.8 -I/Users/vladimirusakov/miniforge3/envs/mlp/include/python3.8')
+    # extra_args.append('-I/Users/vladimirusakov/miniforge3/envs/mlp/lib/python3.8/site-packages/numpy/core/include')
+    # extra_args.append('-c')
 
     if system == 'Linux':
         extra_args.append('-std=c++11')
